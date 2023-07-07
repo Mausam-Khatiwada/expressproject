@@ -16,9 +16,11 @@ html{
   height: 100%;
 }
 body{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
 
 }
 .row{
@@ -73,6 +75,17 @@ body{
   outline: none;
   cursor: pointer;
 }
+ .footer {
+      background-color: #1e272e;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      bottom: 0;
+      color: white;
+    }
+     .content {
+      flex: 1;
+    }
 
 .main_header_left button:hover{
 box-shadow: 0 8px 6px -6px var(--main-color);

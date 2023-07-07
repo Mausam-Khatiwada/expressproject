@@ -4,7 +4,7 @@
 	{{>links}}
 </head>
 <style type="text/css">
-p {
+.main_header_left>p {
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 15px;
@@ -13,8 +13,9 @@ p {
 </style>
 <body>
 
-{{>navbar}}
 
+<div class="content">
+  {{>navbar}}
 <div class="container-fluid main_header">
 	<div class="row">
 		<div class="col-md-10 col-12 mx-auto">
@@ -36,7 +37,7 @@ p {
 		</div>
 	</div>
 </div>
-
-
+</div>
+{{>footer}}
 </body>
 </html>

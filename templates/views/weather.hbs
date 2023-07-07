@@ -8,15 +8,16 @@
    
   background-image: url('./images/weather.jpg');
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  background-size: auto;
 
   }
 </style>
 <body>
 
-{{>navbar}}
 
+<div class="content">
+  {{>navbar}}
 <div class="container-fluid main_header weather_page">
 	<div class="row">
 		<div class="col-md-10 col-12 mx-auto">
@@ -55,7 +56,8 @@
 		</div>
 	</div>
 </div>
-
+</div>
+{{>footer}}
 <script type="text/javascript" src="js/main.js">
 
 </script>
