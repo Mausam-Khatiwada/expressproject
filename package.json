@@ -2,7 +2,8 @@
   "name": "expressweather",
   "version": "1.0.0",
   "description": "",
-   "scripts": {
+  "main": "index.js",
+     "scripts": {
             "start": "node index.js"
           },
   "scripts": {
