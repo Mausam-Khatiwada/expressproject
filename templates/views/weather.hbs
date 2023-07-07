@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{>links}}
+</head>
+<style type="text/css">
+  body{
+   
+  background-image: url('./images/weather.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }
+</style>
+<body>
+
+{{>navbar}}
+
+<div class="container-fluid main_header weather_page">
+	<div class="row">
+		<div class="col-md-10 col-12 mx-auto">
+      <div class="main_content">
+        <form class="temp_form">
+          <input type="text" id="cityName" placeholder="Enter your city name" autocomplete="off">
+          <input type="submit" value="search" id="submitBtn">
+        </form>
+      </div>
+<div class="tempInformation">
+  <div class="top_layer">
+    <p id="day">Wednesday</p>
+    <p id="today_date">5 july</p>
+  </div>
+  <div class="main_layer ">
+    <p id="city_name">Get output here</p>
+    <div class="middle_layer data_hide">
+      <p id="temp"><span id="temp_degree">0</span><sup>o</sup>C</p>
+      <p id="temp_status">
+        <i class="fa fa-cloud" aria-hidden="true"></i></p>
+         
+    </div>
+    <div class="down">
+    <div id="status">
+      
+    </div>
+<div id="humidity">
+      
+    </div>
+    <div id="visibility">
+      
+    </div>
+   </div>
+  </div>
+</div>
+		</div>
+	</div>
+</div>
+
+{{>footer}}
+<script type="text/javascript" src="js/main.js">
+
+</script>
+</body>
+</html>
